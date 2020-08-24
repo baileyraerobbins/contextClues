@@ -19,7 +19,7 @@ function createAccu(num) { //Create outer function to begin closure
     document.body.appendChild(h3); //Append H3 element to document
     var accusationNum = 'Accusation ' + (num); //Accusation # on alert
 
-    h3.addEventListener('click', function () { //Return clickable H3 event listener (inner functon)
+    return h3.addEventListener('click', function () { //Return clickable H3 event listener (inner functon)
         alert(accusationNum + ': I accuse ' + friend[f] + ', with the ' + weapon[w] + ' in the ' + location[l] + '!'); //Alert with Accusation
     })
 };
